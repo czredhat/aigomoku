@@ -183,9 +183,9 @@ function evaluateDirection(row, col, rowDir, colDir, player, board, gridSize) {
         // Přidá skóre na základě počtu symbolů a volných políček
         if (count > 0 && empty > 0) {
             if (count === 4) {
-                score += 1000; // Téměř vyhrávající řada
+                score += 2000; // Téměř vyhrávající řada
             } else if (count === 3) {
-                score += 100; // Silná řada
+                score += 200; // Silná řada
             } else if (count === 2) {
                 score += 10; // Slabá řada
             } else if (count === 1) {
